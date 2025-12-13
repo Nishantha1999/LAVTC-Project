@@ -1,5 +1,5 @@
 <header class="header">
-    <a href="home.html" class="logo">Campie.</a>
+    <a href="home.html" class="logo">Sri Lanka Camping</a>
 
     <nav class="navbar">
         <a href="home.html">home</a>

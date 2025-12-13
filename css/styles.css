@@ -48,6 +48,7 @@ body.dark{
 	--light-bg: #211f3f;
 	--black: #fff;
 	--white: #1a1b1c;
+	--light-clr:red;
 }
 
 /* reusable classes */
