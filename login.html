@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link rel="stylesheet" href="css/styles.css">
+<link rel="icon" href="./img/logo.png" type="icon/x-image">
 <title>Campie | Login</title>
 </head>
 
@@ -17,7 +18,7 @@
 
     <nav class="navbar">
         <a href="home.html">home</a>
-        <a href="about.html">about</a>
+        <a href="about.html">Places</a>
         <a href="contact.html">contact</a>
         <a href="login.html" class="btn">login</a>
     </nav>
@@ -27,7 +28,7 @@
         <div class="icon fas fa-lightbulb" id="theme-btn"></div>
     </div>
 </header>
-<section class="login section">
+<!--<section class="login section">
     <h2 class="heading">Login</h2>
 
     <form class="login-form">
@@ -35,33 +36,52 @@
         <input type="password" placeholder="Password" required>
         <input type="submit" value="Login" class="btn">
     </form>
-</section>
+</section>-->
+<div class="login-container">
+        <form class="login-form" id="loginForm">
+            <h2>Welcome Back</h2>
+            <div class="input-group">
+                <input type="email" id="email" placeholder="Email" required>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" placeholder="Password" required>
+            </div>
+            <button type="submit" class="btn-login">Login</button>
+            <div class="links">
+                <a href="#" id="forgotPassword">Forgot your password?</a>
+                <a href="register1.html" id="registerNow">Register now</a>
+            </div>
+        </form>
+    </div>
+    <br>
+
 
 <footer class="footer">
     <div class="box">
         <h3>campie.</h3>
-        <p>Camping or camping is a tourist activity that consists of staying in the same place in a tent, a caravan or even in a motorhome. In particular, it uses a caravan, a clip car or a motorhome.
+        <p>Camping or camping is a tourist activity that consists of staying in the same place in a tent,
+             a caravan or even in a motorhome. In particular, it uses a caravan, a clip car or a motorhome.
         </p>
         <div class="socials">
             <a href="#" class="fab fa-discord"></a>
             <a href="#" class="fab fa-twitter"></a>
             <a href="#" class="fab fa-instagram"></a>
-            <a href="#" class="fab fa-youtube"></a>
+            <a href="https://youtube.com/shorts/njvXPM4s_K4?si=19DKaRvM2mayCDdF" class="fab fa-youtube"></a>
         </div>
     </div>
     <div class="box">
         <h3>marketplace</h3>
-        <a href="#product">explore</a>
-        <a href="#about">articles</a>
-        <a href="#adventure">how it works</a>
-        <a href="#contact">help</a>
+        <a href="#product">🏕️ Shelter & Sleeping</a>
+        <a href="#about">🔥 Cooking & Food</a>
+        <a href="#adventure">🚗 Vehicles</a>
+        <a href="#contact">🧭 Tour operator</a>
     </div>
     <div class="box">
-        <h3>links</h3>
-        <a href="#">JeanDoe</a>
-        <a href="#">API</a>
-        <a href="#">valid</a>
-        <a href="#parthner">become parthners</a>
+        <h3>Descriptions</h3>
+        <a href="#">About Campie</a>
+        <a href="#">Careers</a>
+        <a href="#">Terms of Service</a>
+        <a href="#parthner">Privacy Policys</a>
     </div>
 </footer>
 

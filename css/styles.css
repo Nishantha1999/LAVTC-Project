@@ -7,8 +7,8 @@
 /* css variables */
 
 :root{
-	--main-clr: #567;
-	--light-bg: #d1e1f1;
+	--main-clr: rgb(71, 100, 128);
+	--light-bg: #ffffff;
 	--white-bg: #f9fafa;
 	--light-clr: #7a7b7c;
 	--black: #1a1b1c;
@@ -19,6 +19,7 @@
 }
 
 /* initialisation */
+
 
 *{
 	margin: 0;
@@ -40,6 +41,7 @@ html{
 body{
 	background: var(--light-bg);
 	font-family: var(--body-font);
+	
 }
 
 /* dark mode */
@@ -161,6 +163,11 @@ body.dark{
 }
 
 /* adventure section starts */
+.home_p{
+	margin-left:100px;
+	margin-right: 100px;
+	padding: 60px;
+}
 
 .adventure{
 	padding: 1rem;
@@ -446,3 +453,362 @@ body.dark{
 
 
 
+
+
+
+
+
+
+
+
+
+/* Gallery Container */
+.gallery-container {
+    width: 90%;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Row Styling */
+.gallery-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+/* Individual Gallery Items */
+.gallery-item {
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.gallery-item .description {
+    padding: 15px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Hover Effects */
+.gallery-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* Responsive Text */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2.2rem;
+    }
+
+    .header p {
+        font-size: 1rem;
+    }
+
+    .gallery-item img {
+        height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-item img {
+        height: 150px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*login page */
+
+
+/* Body background and full-screen settings */
+
+/* Container for login form */
+.login-container {
+	margin: auto;
+	justify-content: center;
+    background: rgba(255, 255, 255, 0.1); /* transparent effect */
+    backdrop-filter: blur(15px); /* blur for sophistication */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    width: 350px;
+    text-align: center;
+    color: #fff;
+}
+
+/* Form title */
+.login-form h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #e74b4b;
+}
+
+/* Input fields */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-group input::placeholder {
+    color: #23993a;
+}
+
+.input-group input:focus {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 10px rgba(255,255,255,0.5);
+}
+
+/* Login button */
+.btn-login {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    color: #ffffff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.btn-login:hover {
+    background: linear-gradient(45deg, #2575fc, #6a11cb);
+    transform: scale(1.05);
+}
+
+/* Links under the button */
+.links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.links a {
+    color: #421ce8;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 400px) {
+    .login-container {
+        width: 90%;
+        padding: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Register page*/
+
+.page-wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-card {
+    width: 1100px;
+    height: 700px;
+    background: #fff;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* Left Section */
+.form-section {
+    width: 50%;
+    padding: 50px;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.form-section h2 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.google-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.google-btn img {
+    width: 18px;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.divider span {
+    flex: 1;
+    height: 1px;
+    background: #ddd;
+}
+
+.divider p {
+    margin: 0 10px;
+    color: #888;
+}
+
+.form-control {
+    height: 45px;
+}
+
+.signin-text {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signin-text a {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Right Section */
+.image-section {
+    width: 50%;
+    background-image: url("https://images.unsplash.com/photo-1503342217505-b0a15ec3261c");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.image-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.25);
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    right: 40px;
+    color: #fff;
+}
+
+.overlay-text h3 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.overlay-text p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+
+
+
+/*home page image gallary*/
+
+/*location find*/
+
+.title {
+    margin: 20px 0;
+	text-align: center;
+	
+}
+
+.map-container {
+    width: 90%;
+    max-width: 900px;
+    height: 450px;
+    margin: auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
