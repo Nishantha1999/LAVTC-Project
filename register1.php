@@ -8,7 +8,7 @@
 <link rel="icon" href="./img/logo.png" type="icon/x-image">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-<title>Campie | Login</title>
+<title>www.SriLankan Camping.lk</title>
 </head>
 <!-- HEADER -->
 
@@ -42,34 +42,45 @@
                     <hr class="flex-grow-1">
                 </div>
 
-                <form>
+                <form action="registor_process.php" method="post">
                     <div class="mb-3">
-                        <label class="form-label">Email address</label>
-                        <input type="email" class="form-control">
+                        <label class="form-label">User name</label>
+                        <input type="text" class="form-control" name="uname">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Password </label>
+                        <input type="text" class="form-control" name="pasword">
                     </div>
 
                     <div class="mb-3">
-                        <label class="form-label">Password</label>
-                        <input type="password" class="form-control">
+                        <label class="form-label">Email address</label>
+                        <input type="email" class="form-control" name="eaddress">
                     </div>
 
                     <div class="mb-4">
-                        <label class="form-label">Repeat password</label>
-                        <input type="password" class="form-control">
+                        <label class="form-label">Your address</label>
+                        <input type="text" class="form-control" name="yaddess">
+                    </div>
+                    <div class="mb-4">
+                        <label class="form-label">Mobile number</label>
+                        <input type="text" class="form-control" name="mnumber">
                     </div>
 
                     <button type="submit" class="btn btn-dark w-100">
                         Sign Up
                     </button>
+                    
+                    
                 </form>
 
             </div>
         </div>
 
+
         <!-- RIGHT: Image Section -->
         <div class="col-md-6 d-none d-md-flex text-white align-items-end"
              style="
-                background-image: url('./img/r1.jpg');
+                background-image: url('./img/walpepr2.jpg');
                 background-size: cover;
                 background-position: center;
                  border-radius: 30px;

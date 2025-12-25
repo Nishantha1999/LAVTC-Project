@@ -1,3 +1,12 @@
+<?php
+session_start();
+// Require login: redirect if not authenticated
+if (!isset($_SESSION['user_id'])) {
+    header('Location: login.php');
+    exit;
+}
+$username = isset($_SESSION['username']) ? $_SESSION['username'] : '';
+?>
 <!doctype html>
 <html>
 <head>
@@ -8,7 +17,7 @@
 <link rel="icon" href="./img/logo.png" type="icon/x-image">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-<title>Campie | Login</title>
+<title>www.SriLankan Camping.lkn</title>
 </head>
 
 <body>
@@ -39,39 +48,33 @@
                     For all general inquiries, use this form. Throughout working hours, we continuously keep an eye on these responses.
                 </p>
 
-                <form>
+                <form action="contact_process.php" method="post" >
                    
                     <div class="mb-3">
                         <label class="form-label">Full Name *</label>
-                        <input type="text" class="form-control" placeholder="Enter your name" required>
+                        <input type="text" name="cfullname" class="form-control" placeholder="Enter your name"  required >
                     </div>
 
                   
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label class="form-label">Email *</label>
-                            <input type="email" class="form-control" placeholder="Enter your email" required>
+                            <input type="email" name="cemail" class="form-control" placeholder="Enter your email" required>
                         </div>
                         <div class="col-md-6 mb-3">
                             <label class="form-label">Phone Number *</label>
-                            <input type="tel" class="form-control" placeholder="Enter your number" required>
+                            <input type="tel" name="cnumber" class="form-control" placeholder="Enter your number" required>
                         </div>
                     </div>
 
                   
                     <div class="mb-4">
                         <label class="form-label">Message *</label>
-                        <textarea class="form-control" rows="4" placeholder="Enter your message" required></textarea>
+                        <textarea class="form-control" name="cmass" rows="4" placeholder="Enter your message" required></textarea>
                     </div>
 
                     
-                    <button
-                        type="submit"
-                        class="btn btn-primary px-4"
-                        style="background-color: #8b5cf6; border: none;"
-                    >
-                        Send Your Message
-                    </button>
+                    <button type="submit" class="btn btn-outline-success">Send Your Massage</button>
                 </form>
             </div>
 

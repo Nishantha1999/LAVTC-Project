@@ -11,7 +11,7 @@
  
 
  
-<title>Campie | Login</title>
+<title>www.SriLankan Camping.lk</title>
 </head>
 <style>
         body {
@@ -24,7 +24,7 @@
         }
 
         .hero-img {
-            background: url("./img/regisrer2.jpg") center/cover no-repeat;
+            background: url("./img/walpaper.jpg") center/cover no-repeat;
             min-height: 100vh;
             border-radius: 40px;
             width: 700px;
@@ -61,6 +61,14 @@
         .call-btn{
             margin-bottom: 15px;
         }
+
+        .social-icons a i {
+    color: #054140ff;   /* change to any color */
+}
+
+.social-icons a i:hover {
+    color: #f21111ff;   /* hover color */
+}
     </style>
 <body>
 <!-- HEADER -->
@@ -72,7 +80,7 @@
     <div class="row g-0">
         
         <!-- LEFT IMAGE -->
-        <div class="col-lg-6 hero-img"></div>
+        <div class="col-lg-6 hero-img" style="margin-top: 50px;"></div>
 
         <!-- RIGHT CONTENT -->
         <div class="col-lg-6 hero-content">
@@ -88,13 +96,14 @@
 
             <p class="fw-bold">www.SriLankan Camping.lk</p>
 
-            <div class="social-icons my-3">
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-twitter"></i></a>
+            <div class="social-icons my-3 " >
+            <a href="https://web.facebook.com/?_rdc=1&_rdr#"><i class="bi bi-facebook fs-1"></i></a>
+             <a href="https://www.instagram.com/"><i class="bi bi-instagram fs-1"></i></a>
+             <a href="https://x.com/"><i class="bi bi-twitter fs-1"></i></a>
             </div>
 
-            <a href="location.php"><button class="call-btn">Read more...</button></a>
+            <a href="location.php"><button type="button" class="btn btn-outline-success"
+            style="margin-bottom: 5px;">Read more</button></a>
              <!--location find-->
              <div class="map-container">
 

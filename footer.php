@@ -25,7 +25,7 @@
 
                 <!-- SOCIAL ICONS -->
                 <div style="margin-top:15px;">
-                    <a href="#" style="color:black;margin-right:12px;font-size:18px;">
+                    <a href="https://web.facebook.com/?_rdc=1&_rdr#" style="color:black;margin-right:12px;font-size:18px;">
                         <i class="bi bi-facebook"></i>
                     </a>
                     <a href="#" style="color:black;margin-right:12px;font-size:18px;">

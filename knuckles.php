@@ -8,7 +8,7 @@
 <link rel="icon" href="./img/logo.png" type="icon/x-image">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-<title>Campie | Login</title>
+<title>www.SriLankan Camping.lk</title>
 </head>
 
 <body>
@@ -195,8 +195,7 @@
         </div>
 
     </div>
-<a href="product.php"><button class="call-btn"
-style="border-radius:30px ; margin-left: 1200px; background:#4a5d73; color: #ffffff;">Product Order...>>></button></a>
+
 
 
     <?php include 'footer.php'; ?>

@@ -8,7 +8,7 @@
 <link rel="icon" href="./img/logo.png" type="icon/x-image">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-<title>Campie | Login</title>
+<title>www.SriLankan Camping.lk</title>
 </head>
 
 <body>
@@ -26,7 +26,7 @@
             <div class="col-md-6 d-none d-md-block">
                 <img
                 style=" border-radius: 30px;"
-                    src="./img/drif-riadh-YpkuRn54y4w-unsplash.jpg"
+                    src="./img/wlpaper3.jpg"
                     alt="Office"
                     class="img-fluid h-100 w-100 object-fit-cover rounded-start"
                 >
@@ -39,57 +39,54 @@
                     For all general inquiries, use this form. Throughout working hours, we continuously keep an eye on these responses.
                 </p>
 
-                <form>
+                <form action="order_prosess.php" method="post">
                    
                     <div class="mb-3">
                         <label class="form-label">Full Name *</label>
-                        <input type="text" class="form-control" placeholder="Enter your name" required>
+                        <input type="text" name="ofname" class="form-control" placeholder="Enter your name" >
                     </div>
 
                   
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label class="form-label">Email *</label>
-                            <input type="email" class="form-control" placeholder="Enter your email" required>
+                            <input type="email" name="oemail" class="form-control" placeholder="Enter your email" >
                         </div>
-                        <div class="col-md-6 mb-3">
+                    <div class="col-md-6 mb-3">
                             <label class="form-label">Phone Number *</label>
-                            <input type="tel" class="form-control" placeholder="Enter your number" required>
-                        </div>
+                            <input type="text" name="opnum" class="form-control" placeholder="Enter your number" >
+                     </div>
                     </div>
 
+                    
                      <div class="mb-3">
                         <label class="form-label">Item Name *</label>
-                        <input type="text" class="form-control" placeholder="Enter your name" required>
+                        <input type="text" name="oiname" class="form-control" placeholder="Enter your name" >
                     </div>
 
                      <div class="mb-3">
                         <label class="form-label">Item Co-No *</label>
-                        <input type="text" class="form-control" placeholder="Enter your name" required>
+                        <input type="text" name="oicno" class="form-control" placeholder="Enter your name" >
                     </div>
 
                     <div class="mb-3">
                         <label class="form-label">How Mutch Item *</label>
-                        <input type="text" class="form-control" placeholder="Enter your name" required>
+                        <input type="text" name="hmitem" class="form-control" placeholder="Enter your name" >
                     </div>
                   
                     <div class="mb-4">
                         <label class="form-label">Message *</label>
-                        <textarea class="form-control" rows="4" placeholder="Enter your message" required></textarea>
+                        <textarea class="form-control" name="omassage" rows="4" placeholder="Enter your select location" ></textarea>
                     </div>
 
-                    
-                    <button
-                        type="submit"
-                        class="btn btn-primary px-4"
-                        style="background-color: #f40303ff; border: none;"
-                    >
-                        Send Your Message
-                    </button>
-                </form>
+                    <button type="submit" class="btn btn-outline-danger">Send Your Message</button>
+              </form>
+
+              
             </div>
 
         </div>
+      
     </div>
 </div>
 
